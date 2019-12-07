@@ -1,0 +1,68 @@
+body {
+  font-family: Verdana;
+  margin: 0em;
+  text-align: center;
+}
+.body {
+  display: flex;
+  justify-content: center;
+}
+.dropdown {
+  cursor: pointer;
+  width: 100%;
+}
+.Selector {
+  background-color: #195ac2;
+  transition: 0.7s;
+}
+.underSelector {
+  background-color: #2176ff;
+  transition: 1s;
+}  
+ul {
+  width: 100%;
+  padding: 0em;
+  margin: 0em;
+}
+li {
+  padding: 1em;
+  font-size: 150%;
+  display: block;
+}
+.dropdownContent a, .underDropdownContent a {
+  padding: 0.4em;
+  background-color: #5f99f5;
+  font-size: 150%;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 125%;
+  transition: 1s;
+  user-select: none;
+}
+.underDropdownContent,
+.dropdownContent,
+.dropdownFolder
+{
+  height: 0px;
+  overflow: hidden;
+  transition: 1s;
+}
+.dropdownContent a:hover {
+  transition: 0.2s;
+  background-color: #78abff;
+}
+.dropdown:hover #dbFiles {
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.3s;
+  height: 80px;
+}
+.dropdown:hover #userFiles {
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.3s;
+  height: 280px;
+}
+.dropdown:hover .Selector {
+  transition: 0.5s;
+  background-color: #193e78;
+}
